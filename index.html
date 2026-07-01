@@ -46,3 +46,118 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
         }
 
+        header p {
+            font-style: italic;
+            color: var(--dourado-barca);
+            font-weight: bold;
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+
+        /* --- CONTENTOR PRINCIPAL --- */
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* --- SECÇÃO SOBRE O CLUB --- */
+        .about-section {
+            background-color: var(--branco);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .about-section h2 {
+            color: var(--blaugrana-azul);
+            margin-bottom: 15px;
+            border-bottom: 3px solid var(--blaugrana-grana);
+            padding-bottom: 5px;
+        }
+
+        /* --- GRELHA DE INFORMAÇÕES (GRID) --- */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: var(--branco);
+            border-left: 5px solid var(--blaugrana-grana);
+            padding: 25px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            border-left-color: var(--dourado-barca);
+        }
+
+        .card h3 {
+            color: var(--blaugrana-azul);
+            margin-bottom: 12px;
+            font-size: 1.4rem;
+        }
+
+        /* --- FOOTER / RODAPÉ --- */
+        footer {
+            background-color: var(--escuro);
+            color: var(--branco);
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 0.95rem;
+            border-top: 3px solid var(--blaugrana-azul);
+        }
+
+        footer span {
+            color: var(--dourado-barca);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Futbol Club Barcelona</h1>
+        <p>"Més que un club" (Mais que um clube)</p>
+    </header>
+
+    <div class="container">
+        <section class="about-section">
+            <h2>História e Tradição</h2>
+            <p>Fundado em 1899 por um grupo de futebolistas suíços, britânicos e catalães liderados por Joan Gamper, o FC Barcelona tornou-se um símbolo global da identidade cultural catalã. É hoje um dos clubes de futebol mais titulados, respeitados e apoiados em todo o planeta.</p>
+        </section>
+
+        <section class="info-grid">
+            <div class="card">
+                <h3>Spotify Camp Nou</h3>
+                <p>O mítico estádio do clube, conhecido pela sua enorme capacidade e por ser o maior palco de futebol de toda a Europa.</p>
+            </div>
+
+            <div class="card">
+                <h3>La Masia</h3>
+                <p>A famosa academia de formação, reconhecida mundialmente por moldar talentos lendários e promover a filosofia do futebol de posse.</p>
+            </div>
+
+            <div class="card">
+                <h3>Palmarés</h3>
+                <p>O museu do clube conta com múltiplos troféus da UEFA Champions League, campeonatos de LaLiga e Taças do Rei.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Visca el Barça <span>•</span> Website de Fã criado com HTML e CSS</p>
+    </footer>
+
+</body>
+</html>
